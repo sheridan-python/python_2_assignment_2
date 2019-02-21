@@ -12,3 +12,7 @@ def test_float_value():
 def test_value_is_1():
     """if input value is 1, return empty list"""
     assert generate_prime_number(1) == [] # empty list
+
+def test_value_is_2():
+    """if the input value is 2, return list [2]"""
+    assert generate_prime_number(2) == [2]
