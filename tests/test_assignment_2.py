@@ -24,3 +24,7 @@ def test_value_is_3():
 def test_value_is_4():
     """ if the input value is 4, return list [2,2]"""
     assert generate_prime_number(4) == [2, 2]
+
+def test_value_is_6():
+    """ if the input is 6, return list [2, 3]"""
+    assert generate_prime_number(6) == [2, 3]
