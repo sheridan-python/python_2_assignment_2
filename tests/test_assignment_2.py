@@ -16,3 +16,7 @@ def test_value_is_1():
 def test_value_is_2():
     """if the input value is 2, return list [2]"""
     assert generate_prime_number(2) == [2]
+
+def test_value_is_3():
+    """if the input value is 3, return list [3]"""
+    assert generate_prime_number(3) == [3]

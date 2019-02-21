@@ -10,6 +10,9 @@ def generate_prime_number(num):
             if num % div == 0:
                 prime_factor_list.append(div) #if num can be divided by div (2) then append
                 num //= div # you need to actually divide the num by div (2)
-                break
+            else:
+                div += 1
+                """ at this point we know we have to divide by greater than 2, so we add 1.
+                Unsure how to add by only odd numbers though so I brute force it. Involves sq rt?"""
         return prime_factor_list
     raise ValueError
