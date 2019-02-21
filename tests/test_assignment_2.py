@@ -7,4 +7,8 @@ from prime import generate_prime_number
 
 def test_float_value():
     """ if a non integer is entered, raise a ValueError"""
-    assert generate_prime_number(4) == bool(True)
+    assert generate_prime_number(2) == [2]
+
+def test_value_is_1():
+    """if input value is 1, return empty list"""
+    assert generate_prime_number(1) == [] # empty list
